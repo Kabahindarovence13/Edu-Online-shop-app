@@ -1,0 +1,113 @@
+
+*{
+    box-sizing: border-box;
+
+}
+/*style nav-bar*/
+.nav-bar{
+    background-color:rgb(202, 16, 16);
+    padding: 20px 0 20px 0;
+    display:block;
+    flex-direction: column;
+   font-family: Arial, Helvetica, sans-serif;
+   width:100%; 
+   
+}
+.nav-bar label{
+    float:right;
+    font-size: 20px;
+
+}
+
+/*style the EDU logo*/
+.nav-bar input [type = text] {
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 50px;
+font-style: oblique;
+}
+h1{
+    text-align: center;
+    color: black;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-image: url("card.jpeg");
+  background-repeat: round;} */
+/*float four coulumns side by side*/
+}
+.row{
+    float:flet;
+    width:30%;
+    padding:0 10px;
+
+}
+/*Remove extra left and right margins, due to padding of columns*/
+.row{
+    margin: 0 -5px;
+    display:flex;
+    align-items:baseline;
+    flex-wrap: wrap;
+    height: 500px;
+    justify-self: center;
+    align-content: space-between;
+    flex-direction: column;
+   
+    
+   
+}
+/*clear floats after the columns*/
+.row:after{
+    content:"";
+    display:table;
+    clear:both;
+}
+/*style the counter cards*/
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    max-width: 300px;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    /*add card effect*/
+padding:16px;
+text-align:center;
+background-color:#f1f1f1;
+flex:33.33%;
+padding: 5px;
+
+
+/*add some transition*/
+transition: 0.3s;
+}
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+/*responsiveness*/
+@media all and (max-width: 700px){
+    .column{
+        width:100%;
+        display:block;
+        margin-bottom:20px;
+      
+    }
+}
+/*media query for orientation*/
+@media all and(orientation:landscape){
+    .h1{ color:green;}
+}
+
+input[type=button]{
+    background-color:rgb(202, 16, 16);
+    border-radius: 5px;
+    font-size: 18px;
+    padding:12px;
+    cursor:pointer;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px grey;  
+}
+
+/* Add rounded corners to the top left and the top right corner of the image */
+img {
+    border-radius: 5px 5px 5px 5px;
+  }
